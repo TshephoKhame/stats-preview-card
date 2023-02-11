@@ -1,0 +1,126 @@
+﻿:root {
+    --clr-primary: hsl(233, 47%, 7%); /* main background*/
+    --clr-secondary: hsl(244, 38%, 16%); /* card background*/
+    --clr-tertiary: hsl(277, 64%, 61%); /*accent*/
+    --clr-white: hsl(0, 0%, 100%); /*main heading, stats*/
+    --clr-lightwhite: hsla(0, 0%, 100%, 0.75); /*main paragraph*/
+    --clr-lighterwhite: hsla(0, 0%, 100%, 0.6); /*stat headings*/
+
+    --ff-Inter: 'Inter', sans-serif;
+    --ff-Lexend: 'Lexend Deca', sans-serif;
+
+    --fs-15:15px;
+}
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+img, picture, video, canvas, svg ,source{
+    display: block;
+    max-width: 100%;
+}
+input, button, textarea, select {
+    font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+
+body
+{
+    background:var(--clr-primary);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-family:var(--ff-Inter);
+    font-size:var(--fs-15);
+    color:var(--clr-lightwhite);
+    
+}
+
+.stats {
+    background: var(--clr-secondary);
+    width: 90%;
+    margin: 10rem auto;
+    max-width: 600px;
+    border-radius: .275rem;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+@media(min-width:1208px) {
+
+    main {
+        display:flex;
+        flex-direction:row-reverse;
+    }
+    .stats {
+        text-align: left;
+        max-width: 1080px;
+        
+    }
+    .stats__text {
+        gap:0!important;
+        padding:4rem!important;  
+        max-width:400px!important;
+
+    }
+    .stats__numbers {
+        display:flex!important;
+    }
+
+    
+}
+
+.stats__header-two {
+    color: var(--clr-tertiary);
+}
+
+.stats__text {
+    padding:2rem;
+    display:grid;
+    gap:1rem;
+    line-height:1.9rem;
+}
+
+h1 {
+    color:var(--clr-white);
+}
+
+p {
+    color: var(--clr-lighterwhite);
+    margin-block-end: auto;
+    margin-block-start: auto;
+}
+img {
+   
+    opacity:0.41;
+}
+
+.stats__img {
+    background:var(--clr-tertiary);
+}
+
+.stats__numbers {
+    text-transform: uppercase;
+    display: grid;
+    gap: 2rem;
+    font-family: var(--ff-Lexend);
+}
+
+
+.stats__statistics {
+    color: var(--clr-white);
+    margin-top: 15px;
+   font-size: 24px;
+    font-weight: 700;
+}
+
+.stats__adjustment {
+    display:grid;
+}
