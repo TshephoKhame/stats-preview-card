@@ -11,13 +11,6 @@
 
     --fs-15:15px;
 }
-img, picture, video, canvas, svg {
-    display: block;
-    max-width: 100%;
-}
-input, button, textarea, select {
-    font: inherit;
-}
 img, picture, video, canvas, svg ,source{
     display: block;
     max-width: 100%;
@@ -28,10 +21,14 @@ input, button, textarea, select {
 p, h1, h2, h3, h4, h5, h6 {
     overflow-wrap: break-word;
 }
+html, body {
+    height: 100%;
+}
 
 
 body
 {
+
     background:var(--clr-primary);
     display:flex;
     align-items:center;
@@ -45,7 +42,7 @@ body
 .stats {
     background: var(--clr-secondary);
     width: 90%;
-    margin: 10rem auto;
+    margin: auto auto;
     max-width: 600px;
     border-radius: .275rem;
     text-align: center;
